@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+body
+{
+    min-height: 200vh;
+    background-color: darkslategray;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 30px 100px;
+    z-index: 10000;
+}
+header.sticky
+{
+    padding: 5px 100px;
+    background: #000;
+}
+
+header .logo
+{
+    position: relative;
+    font-weight:  700;
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform:  uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a 
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+header.sticky .logo,
+header.sticky ul li a
+{
+    color: white;
+}
+
+.equipe
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20vh;
+}
+
+.equipe img
+{
+    height: 50vh;
+    width: auto;
+    border-radius: 50%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.equipe h2
+{
+    margin-left: 5vw;
+}
+
+.equipe p
+{
+    text-align: justify;
+    font-size: 1.5em;
+    margin-top: 5vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+.nomFlex
+{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#alexy, #antoine, #christophe, #leo, #lucass, #nathan, #pierre, #sergei
+{
+    background-color: dimgray;
+}
+#anthime, #axel, #karl, #lucasl, #marine, #philippe, #romaric
+{
+    background-color: darkslategray;
+}
