@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SERPE</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -24,7 +25,14 @@
         <h1>Équipe</h1>
     </section>
 
-    <section class="competences">
+    <section class="competences"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease"
+        data-aos-mirror="true"
+        data-aos-once="false">
         <h1>Compétences</h1>
         <div class="competencesFlex">
             <div class="boxCompetencesFlex">
@@ -47,6 +55,11 @@
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
         })
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
