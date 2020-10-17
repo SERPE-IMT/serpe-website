@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERPE</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    
+    <header>
+        <a href="#" class="logo">SERPE</a>
+        <ul>
+            <li><a href="home.html">Accueil</a></li>
+            <li><a href="#">Le projet</a></li>
+            <li><a href="team.html">L'équipe</a></li>
+            <li id="current"><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="banner"></section>
+
+    <section class="formulaireContact">
+        <div class="contactForm">
+            <h2>Contact</h2>
+
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mqkgpvaq" method="post">
+                <input type="text" name="_prenom" id="prenom" placeholder="Prénom*" required="">
+                <input type="text" name="_nom" id="nom" placeholder="Nom*" required="">
+                <input type="email" name="_emetteur" id="email" placeholder="E-mail*" required="">
+                <textarea rows="5" name="message" id="message" placeholder="Message*" required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Formulaire de contact SERPE">
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logos">
+            <img src="../images/logo IMT.jpg" alt="">
+            <img src="../images/Logo MKX4.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>© Copyright - IMT Mines Alès 2011-2020</p>
+        </div>
+        <div class="empty"></div>
+    </footer>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

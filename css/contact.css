@@ -8,7 +8,8 @@
 }
 body
 {
-    min-height: 200vh;
+    min-height: 100vh;
+    max-height: 100vh;
     background-color: white;
 }
 header
@@ -126,118 +127,98 @@ header ul li a:hover:after {
 .banner
 {
     position: relative;
-    background: url(../images/serpe.jpg);
+    background: url(../images/googlemap.png);
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 20%;
     height: 100vh;
+    background-color: black;
 }
 
-.banner h1
+.formulaireContact
 {
-    font-weight: bold;
-    font-size: 3em;
-    letter-spacing: 2px;
-    text-align: center;
     position: absolute;
-    top: 40%;
-    left: 10%;
+    top:51%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+    height: 80vh;
+    width: 40vw;
+    background-color: rgba(47, 79, 79, 30%);
+    border-radius: 10px;
 }
 
-header.sticky .logo,
-header.sticky ul li a
+.contactForm h2
 {
-    color: white;
-}
-
-.equipe h1
-{
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    padding-left: 2vw;
-    font-size: 3em;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.competences
-{
-    background-color: rgba(30, 144, 255, 30%);
-}
-
-.competences h1
-{
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    padding-left: 2vw;
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.competences .competencesFlex
-{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    font-size: 1.5em;
+    color: rgb(0, 0, 139);;
     padding: 5vh;
 }
 
-.competences .boxCompetencesFlex
+.contactForm form
 {
+    position: block;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-}
-
-.competences img
-{
-    max-width: 20%;
-    height: auto;
-    position: relative;
-    top: 50%;
-}
-
-.competences h2
-{
-    position: relative;
     text-align: center;
-    font-size: 1.5em;
-    margin: 2vh;
-    font-weight: normal;
 }
 
-.projet
+textarea
 {
-    background-color: white;
-    min-height: 100vh;
-}
-
-.projet h1
-{
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    padding-left: 2vw;
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.projet p
-{
-    text-align: justify;
+    resize: none;
+    width: 35vw;
+    height: auto;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    border: none;
     font-size: 1em;
-    margin: 2vh;
-    font-weight: normal;
+    margin-bottom: 5vh;
+}
+
+input[type=text]
+{
+    width: 35vw;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 5vh;
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+input[type=email]
+{
+    width: 35vw;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 5vh;
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+input[type=submit]
+{
+    width: 6vw;
+    height: 6vh;
+    margin: auto;
+    margin-bottom: 5vh;
+    font-size: 1em;
+    background-color: rgb(0, 0, 139);
+    border-radius: 10px;
+    border: none;
+    color: white;
 }
 
 footer
 {
+    position: relative;
+    transform: translateY(-126%);
     margin: 0;
     display: flex;
-    margin-bottom: 2vh;
     align-items: center;
     justify-content: space-between;
 }

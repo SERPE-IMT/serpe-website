@@ -27,13 +27,13 @@ header
 header.sticky
 {
     padding: 5px 100px;
-    background: #000;
+    background: rgba(0, 0, 139, 80%);
 }
 
 header .logo
 {
     position: relative;
-    font-weight:  700;
+    font-weight: bold;
     color: black;
     text-decoration: none;
     font-size: 2em;
@@ -59,11 +59,12 @@ header ul li
 header ul li a 
 {
     position: relative;
-    margin: 0 15px;
+    padding: 8px 8px;
+    margin: 0 10px;
     text-decoration: none;
     color: black;
     letter-spacing: 2px;
-    font-weight: 500px;
+    font-weight: bold;
     transition: 0.6s;
 }
 
@@ -71,6 +72,63 @@ header.sticky .logo,
 header.sticky ul li a
 {
     color: white;
+}
+
+header ul li a,
+header ul li a:after,
+header ul li a:before {
+  transition: all .5s;
+}
+
+header #current a,
+header ul li a:hover {
+  color: rgb(30, 144, 255);
+}
+
+header.sticky #current a,
+header.sticky ul li a:hover {
+    color: rgb(30, 144, 255);
+}
+
+header ul li a:after,
+header ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: rgb(30, 144, 255);
+  height: 2px;
+}
+
+header.sticky ul li a:after,
+header.sticky ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: rgb(30, 144, 255);
+  height: 2px;
+}
+
+header #current a:after,
+header ul li a:hover:after {
+  width: 100%;
+}
+
+.titre h1
+{
+    font-size: 3em;
+    text-align: center;
+    padding-top: 20vh;
+    padding-bottom: 5vh;
 }
 
 .equipe
@@ -89,7 +147,6 @@ header.sticky ul li a
 
 .nomFlex img
 {    
-    width: auto;
     border-radius: 50%;
     object-fit: cover;
     object-position: 0 75%;
@@ -97,10 +154,19 @@ header.sticky ul li a
     height: 30vh;
 }
 
+.equipe h2
+{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px;
+}
+
 .equipe p
 {
     text-align: justify;
-    font-size: 1.5em;
+    font-size: 1em;
+    margin: 20px;
+    margin-top: 0;
 }
 
 .nomFlex
@@ -111,9 +177,36 @@ header.sticky ul li a
     justify-content: space-between;
     flex-direction: column;
     width: 30vw;
-    padding-top: 20vh;
+    padding-top: 5vh;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 5vh;
     padding-bottom: 5vh;
+}
+
+footer
+{
+    margin: 0;
+    display: flex;
+    margin-bottom: 2vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .logos
+{
+    margin-left: 2vw;
+}
+
+footer img
+{
+    height: 7vh;
+    width: auto;
+    margin-right: 1vw;
+}
+
+footer .logos,
+footer .empty
+{
+    flex: 1;
 }
