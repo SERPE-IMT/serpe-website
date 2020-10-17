@@ -88,10 +88,13 @@ header.sticky ul li a
 }
 
 .nomFlex img
-{
-    height: 20vh;
+{    
     width: auto;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: 0 75%;
+    width: 30vh;
+    height: 30vh;
 }
 
 .equipe p
