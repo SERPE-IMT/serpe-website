@@ -149,7 +149,6 @@ header ul li a:hover:after {
 {    
     border-radius: 50%;
     object-fit: cover;
-    object-position: 0 75%;
     width: 30vh;
     height: 30vh;
 }
